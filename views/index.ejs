@@ -6,6 +6,21 @@
     <title>simple ejs</title>
   </head>
   <body>
+    <h1>Hello World from index.ejs</h1>
+    <%= console.log("where am I ?") %>
+
+    <form method="POST" action="/postClientData">
+      <input
+        type="text"
+        name="userName"
+        id="userName"
+        placeholder="give me your name"
+        value="default value"
+      />
+
+      <input type="submit" value="Submit" />
+    </form>
+
     <h1><%= myVariableClient %></h1>
   </body>
 </html>
